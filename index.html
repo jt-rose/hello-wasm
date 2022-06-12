@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Wasm</title>
+</head>
+<body>
+<h1>WASM EXAMPLE</h1>
+    <script type="module">
+        import init, { greet} from "./pkg/hello_wasm.js";
+        init()
+            .then(() => {
+                greet("Wasm")
+            })
+    </script>
+</body>
+</html>
